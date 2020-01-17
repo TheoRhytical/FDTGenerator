@@ -2,17 +2,6 @@
 #include<vector>
 #include<string>
 
-/*
-
-
-int classSize(int r, float k) {
-	float c;
-	c = r / k;
-	round(c);
-	return c;
-
-}
-*/
 float round2(float var)
 {
 	float value = (int)(var * 100 + .5);
@@ -73,7 +62,8 @@ int main() {
 
 	float K = round2(sturgesApproxForm(n));
 	std::cout << "The number of classes is: " << K << std::endl;
-
+	
+	//Calculates Class Size
 	float C = R / K;
 	C = std::round(C);
 
